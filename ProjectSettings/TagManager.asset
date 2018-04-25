@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Astroids
+    uniqueID: 966233303
+    locked: 0
+  - name: Ship
+    uniqueID: 1056725667
+    locked: 0
