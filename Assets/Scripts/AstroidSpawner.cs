@@ -12,18 +12,22 @@ public class AstroidSpawner : MonoBehaviour
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (elapsedTime < spawnTime)
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!GameController.instance.gameOver)
         {
-            elapsedTime += Time.deltaTime;
-        }
-        else
-        {
-            float random = Random.Range(-2f, 2f);
-            Instantiate(astroid, new Vector3(random,5.5f, 0), Quaternion.identity);
-            elapsedTime = 0;
+            if (elapsedTime < spawnTime)
+            {
+                elapsedTime += Time.deltaTime;
+            }
+            else
+            {
+                float random = Random.Range(-2f, 2f);
+                Instantiate(astroid, new Vector3(random, 5.5f, 0), Quaternion.identity);
+                elapsedTime = 0;
+            }
         }
 
     }

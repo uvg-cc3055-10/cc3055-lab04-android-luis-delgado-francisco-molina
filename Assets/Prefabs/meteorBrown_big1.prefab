@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 1888908239928732}
-  speed: 10
+  speed: 6
 --- !u!212 &212764195769432510
 SpriteRenderer:
   m_ObjectHideFlags: 1

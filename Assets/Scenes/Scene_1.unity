@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 691747242}
   - component: {fileID: 691747241}
+  - component: {fileID: 691747243}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astroid: {fileID: 1888908239928732, guid: c1c50eef2226f91448c380d9b43090e0, type: 2}
-  spawnTime: 4
+  spawnTime: 3
   elapsedTime: 0
 --- !u!4 &691747242
 Transform:
@@ -156,6 +157,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &691747243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691747240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63315a478e47e44188f6870df00d9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: 0
+  score: 0
 --- !u!1 &957065971
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +181,7 @@ GameObject:
   - component: {fileID: 957065972}
   - component: {fileID: 957065974}
   - component: {fileID: 957065975}
+  - component: {fileID: 957065976}
   m_Layer: 0
   m_Name: playerShip3_green
   m_TagString: Untagged
@@ -262,7 +277,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a5f05886bcc794a865bd9aeb27197e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 13
+--- !u!70 &957065976
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957065971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0030022562, y: -0.039028257}
+  m_Size: {x: 0.72181255, y: 0.72181255}
+  m_Direction: 0
 --- !u!1 &1163686795
 GameObject:
   m_ObjectHideFlags: 0

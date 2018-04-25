@@ -9,13 +9,20 @@ public class Ship : MonoBehaviour {
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        float movX = Input.acceleration.x;
-        rb.transform.Translate(Vector2.right * speed * movX *
-        Time.deltaTime);
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (!GameController.instance.gameOver)
+        {
+            float movX = Input.acceleration.x;
+            rb.transform.Translate(Vector2.right * speed * movX *
+            Time.deltaTime);
+        }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameController.instance.gameOver = true;
     }
 }
