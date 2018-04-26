@@ -8,13 +8,11 @@ public class getHighScore : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        if (0 == PlayerPrefs.GetFloat("HighScore"))
-            PlayerPrefs.SetFloat("HighScore", 0f);
+        texto.text = PlayerPrefs.GetFloat("HighScore").ToString("F0");
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-		texto.text= PlayerPrefs.GetFloat("HighScore").ToString("F0");
     }
 }
