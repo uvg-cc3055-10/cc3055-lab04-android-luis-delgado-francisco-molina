@@ -18,6 +18,7 @@ public class Ship : MonoBehaviour {
             float movX = Input.acceleration.x;
             rb.transform.Translate(Vector2.right * speed * movX *
             Time.deltaTime);
+            GameController.instance.score += (Time.deltaTime);
         }
     }
 
