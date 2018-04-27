@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astroid: {fileID: 1888908239928732, guid: c1c50eef2226f91448c380d9b43090e0, type: 2}
-  spawnTime: 1.5
+  spawnTime: 0.5
   elapsedTime: 0
 --- !u!4 &691747242
 Transform:
